@@ -1,0 +1,89 @@
+:root {
+    --primary-color: #D4AF37;
+    --secondary-color: #D62828;
+    --sub-options: #929292;
+    --card-background: rgb(31, 30, 30);
+    --excellence-color1: #d4af374c;
+    --excellence-color2: #d628285e;
+}
+
+.excellence-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 2rem;
+    /* margin: 2rem; */
+    padding: 4rem 6rem;
+}
+
+.excellence-head{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.excellence-head h1{
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+}
+
+.excellence-head p{
+   text-align: center;
+   font-size: 1.2rem;
+}
+
+.excellence-head p>span{
+    display: block;
+}
+
+.excellence-cardlist{
+    display: flex;
+    /* height: 5rem; */
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 3rem;
+    
+}
+
+.excellence-card{
+    display: flex;
+    flex-direction: column;
+    padding: 3.5rem;
+    gap: 1.5rem;
+    /* width: 25rem; */
+    background-color: var(--card-background);
+    border-radius: 25px;
+    border: 1px solid var(--sub-options);
+}
+
+.excellence-img1{
+    height: 50px;
+    width: 50px;
+    background-color: var(--excellence-color1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.excellence-img2{
+    height: 50px;
+    width: 50px;
+    background-color: var(--excellence-color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.excellence-card-head{
+    font-size: 1.8rem;
+}
+
+.excellence-card-subhead{
+    font-size: 1.2rem;
+    color: #C4C7C7;
+}

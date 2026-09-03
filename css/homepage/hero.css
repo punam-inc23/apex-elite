@@ -1,0 +1,150 @@
+:root {
+    --primary-color: #D4AF37;
+    --secondary-color: #D62828;
+    --sub-options: #929292;
+    --card-background: rgb(31, 30, 30);
+}
+
+/* ******************************Hero Section******************** */
+
+.hero-section {
+    width: 100%;
+    height: 530px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section > img {
+    width: 100%;
+    height: 100%;
+
+    /* object-fit: cover; */
+    object-position: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 1;
+}
+
+.hero-section::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.40);
+
+    z-index: 2;
+}
+
+
+.top-data {
+    position: relative;
+
+    z-index: 3;
+
+    width: 100%;
+    max-width: 750px;
+
+    text-align: center;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.top-data h1 {
+    margin: 0;
+
+    font-size: 4rem;
+    line-height: 1.05;
+
+    font-weight: 900;
+
+    text-transform: uppercase;
+
+    color: #f5eeee;
+
+    text-shadow:
+        3px 3px 0px #4b2020,
+        -1px -1px 0px #ffffff;
+
+}
+
+
+.span-head {
+    display: block;
+}
+
+.top-data p {
+    width: 650px;
+
+    max-width: 90%;
+
+    margin-top: 30px;
+
+    color: #cfcfcf;
+
+    font-size: 1.3rem;
+
+    line-height: 1.6;
+
+    font-weight: 400;
+}
+
+
+.button-div {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 18px;
+
+    margin-top: 38px;
+}
+
+
+.button-div button {
+    height: 3rem;
+
+    padding: 0 30px;
+
+    border-radius: 25px;
+
+    font-size: 1rem;
+
+    font-weight: 700;
+}
+
+.shop-btn {
+    background-color: var(--primary-color);
+
+    color: #151515;
+
+    border: 1px solid var(--primary-color);
+}
+
+.explore-btn {
+    background-color: transparent;
+
+    color: white;
+
+    border: 1px solid #686868;
+}

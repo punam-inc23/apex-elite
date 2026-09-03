@@ -5,9 +5,10 @@ const products = [
         ratings: 4.9,
         reviews: 128,
         price: 220,
-        image: "assets/items/featured-1.png",
+        image: "/apex-elite/assets/items/featured-1.png",
         description: "Engineered for extreme terrain.",
-        sizes: [6, 7, 8, 9, 10]
+        sizes: [6, 7, 8, 9, 10],
+        colors: ["black", "red", "yellow"]
     },
     {
         id: 2,
@@ -15,9 +16,10 @@ const products = [
         ratings: 4.8,
         reviews: 95,
         price: 180,
-        image: "assets/items/featured-2.png",
+        image: "/apex-elite/assets/items/featured-2.png",
         description: "Premium everyday sneaker.",
-        sizes: [6, 7, 8, 9, 10]
+        sizes: [6, 7, 8, 9, 10],
+        colors: ["white", "red"]
     },
     {
         id: 3,
@@ -25,9 +27,10 @@ const products = [
         ratings: 5.0,
         reviews: 210,
         price: 250,
-        image: "assets/items/featured-3.png",
+        image: "/apex-elite/assets/items/featured-3.png",
         description: "Lightweight running shoe designed for speed.",
-        sizes: [6, 7, 8, 9, 10]
+        sizes: [6, 7, 8, 9, 10],
+        colors: ["black", "grey"]
     },
     {
         id: 4,
@@ -35,9 +38,10 @@ const products = [
         ratings: 4.9,
         reviews: 128,
         price: 340,
-        image: "assets/items/shop-1.png",
+        image: "/apex-elite/assets/items/shop-1.png",
         description: "Engineered for extreme terrain.",
-        sizes: [6, 7, 8, 9, 10]
+        sizes: [6, 7, 8, 9, 10],
+        colors: ["black", "red", "yellow"]
     },
     {
         id: 5,
@@ -45,9 +49,10 @@ const products = [
         ratings: 4.8,
         reviews: 120,
         price: 285,
-        image: "assets/items/shop-2.png",
+        image: "/apex-elite/assets/items/shop-2.png",
         description: "Premium everyday sneaker.",
-        sizes: [6, 7, 8, 9, 10]
+        sizes: [6, 7, 8, 9, 10],
+        colors: ["black", "grey"]
     },
     {
         id: 6,
@@ -55,9 +60,10 @@ const products = [
         ratings: 4.9,
         reviews: 128,
         price: 210,
-        image: "assets/items/like-1.png",
+        image: "/apex-elite/assets/items/like-1.png",
         description: "Lightweight running shoe designed for speed.",
-        sizes: [6, 7, 8, 9, 10]
+        sizes: [6, 7, 8, 9, 10],
+        colors: ["white", "red"]
     },
     {
         id: 7,
@@ -65,9 +71,10 @@ const products = [
         ratings: 4.9,
         reviews: 128,
         price: 195,
-        image: "assets/items/like-2.png",
+        image: "/apex-elite/assets/items/like-2.png",
         description: "Engineered for extreme terrain.",
-        sizes: [6, 7, 8, 9, 10]
+        sizes: [6, 7, 8, 9, 10],
+        colors: ["black", "red", "yellow"]
     },
     {
         id: 8,
@@ -75,9 +82,10 @@ const products = [
         ratings: 4.9,
         reviews: 128,
         price: 240,
-        image: "assets/items/like-3.png",
+        image: "/apex-elite/assets/items/like-3.png",
         description: "Engineered for extreme terrain.",
-        sizes: [6, 7, 8, 9, 10]
+        sizes: [6, 7, 8, 9, 10],
+        colors: ["black", "grey"]
     },
     {
         id: 9,
@@ -85,9 +93,10 @@ const products = [
         ratings: 4.9,
         reviews: 128,
         price: 225,
-        image: "assets/items/like-4.png",
+        image: "/apex-elite/assets/items/like-4.png",
         description: "Engineered for extreme terrain.",
-        sizes: [6, 7, 8, 9, 10]
+        sizes: [6, 7, 8, 9, 10],
+        colors: ["white", "red"]
     },
 
 ];
