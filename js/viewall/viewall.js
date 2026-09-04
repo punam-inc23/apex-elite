@@ -11,6 +11,16 @@ products.forEach((product) => {
     const card = document.createElement("div");
     card.classList.add("product-card");
 
+    card.addEventListener("click", () => {
+
+        const url = `../product/product.html?id=${product.id}`;
+
+        console.log("Opening:", url);
+
+        window.location.href = url;
+
+    });
+
     const imgCard = document.createElement("img");
     imgCard.src = product.image;
 

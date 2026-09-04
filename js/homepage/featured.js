@@ -1,6 +1,7 @@
 console.log("HOME JS IS RUNNING");
 
 import products from "../data/products.js"
+import { addToCart } from "../cartpage/cart.js";
 // import "../css/home.css"
 
 console.log("PRODUCTS:", products);
@@ -86,8 +87,30 @@ featuredProducts.forEach((product) => {
     });
 
     const addButton = document.createElement("button");
-    addButton.classList.add("add-button")
-    addButton.textContent = "ADD TO BAG"
+
+    addButton.classList.add("add-button");
+
+    addButton.textContent = "ADD TO BAG";
+
+
+    addButton.addEventListener("click", (event) => {
+
+        // VERY IMPORTANT
+        event.stopPropagation();
+
+        addToCart(product.id);
+
+        addButton.textContent = "ADDED ✓";
+
+
+        setTimeout(() => {
+
+            addButton.textContent =
+                "ADD TO BAG";
+
+        }, 1000);
+
+    });
 
     ratingDiv.append(rateImg, rating, reviews)
 
