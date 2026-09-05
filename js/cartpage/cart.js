@@ -1,10 +1,5 @@
 import products from "../data/products.js";
 
-
-/* =================================
-   CART STORAGE
-================================= */
-
 function getCart() {
 
     const cart =
@@ -22,11 +17,6 @@ function saveCart(cart) {
     );
 
 }
-
-
-/* =================================
-   ADD TO CART
-================================= */
 
 export function addToCart(productId) {
 
@@ -56,11 +46,6 @@ export function addToCart(productId) {
 
 }
 
-
-/* =================================
-   CART COUNT
-================================= */
-
 export function updateCartCount() {
 
     const cart = getCart();
@@ -84,11 +69,6 @@ export function updateCartCount() {
     }
 
 }
-
-
-/* =================================
-   RENDER CART
-================================= */
 
 function renderCart() {
 
@@ -144,11 +124,6 @@ function renderCart() {
 
 }
 
-
-/* =================================
-   CREATE CART ITEM
-================================= */
-
 function createCartItem(
     product,
     quantity
@@ -163,9 +138,6 @@ function createCartItem(
 
     card.classList.add("cart-item");
 
-
-    /* IMAGE */
-
     const image =
         document.createElement("img");
 
@@ -174,13 +146,10 @@ function createCartItem(
     );
 
     image.src =
-        `../../${product.image}`;
+        `${product.image}`;
 
     image.alt =
         product.name;
-
-
-    /* DETAILS */
 
     const details =
         document.createElement("div");
@@ -188,9 +157,6 @@ function createCartItem(
     details.classList.add(
         "cart-item-details"
     );
-
-
-    /* TOP */
 
     const top =
         document.createElement("div");
@@ -248,18 +214,12 @@ function createCartItem(
         price
     );
 
-
-    /* CONTROLS */
-
     const controls =
         document.createElement("div");
 
     controls.classList.add(
         "item-controls"
     );
-
-
-    /* SIZE */
 
     const sizeGroup =
         document.createElement("div");
@@ -291,9 +251,6 @@ function createCartItem(
         sizeLabel,
         size
     );
-
-
-    /* QUANTITY */
 
     const quantityGroup =
         document.createElement("div");
@@ -382,8 +339,6 @@ function createCartItem(
     );
 
 
-    /* ACTIONS */
-
     const actions =
         document.createElement("div");
 
@@ -392,14 +347,24 @@ function createCartItem(
     );
 
 
-    const removeButton =
-        document.createElement("button");
+    const removeButtonDiv =
+        document.createElement("div");
+    
+    removeButtonDiv.classList.add("remove-button")
 
-    removeButton.textContent =
-        "▣ Remove";
+    const removeImg = document.createElement("img");
+    removeImg.src = "/apex-elite/assets/icons/delete.png"
 
+    const removeName = document.createElement("p")
+    removeName.textContent = "Remove"
+    removeName.classList.add("remove-name")
 
-    removeButton.addEventListener(
+    // removeButtonDiv.textContent =
+    //     "▣ Remove";
+
+    removeButtonDiv.append(removeImg, removeName)
+
+    removeButtonDiv.addEventListener(
         "click",
         () => {
 
@@ -417,7 +382,7 @@ function createCartItem(
 
 
     actions.append(
-        removeButton,
+        removeButtonDiv,
         saveButton
     );
 
@@ -438,11 +403,6 @@ function createCartItem(
     cartContainer.append(card);
 
 }
-
-
-/* =================================
-   CHANGE QUANTITY
-================================= */
 
 function changeQuantity(
     productId,
@@ -488,11 +448,6 @@ function changeQuantity(
 
 }
 
-
-/* =================================
-   REMOVE ITEM
-================================= */
-
 function removeFromCart(productId) {
 
     const cart = getCart();
@@ -512,11 +467,6 @@ function removeFromCart(productId) {
     updateCartCount();
 
 }
-
-
-/* =================================
-   EMPTY CART
-================================= */
 
 function renderEmptyCart() {
 
@@ -563,26 +513,14 @@ function renderEmptyCart() {
 
 }
 
-
-/* =================================
-   SUMMARY
-================================= */
-
 function updateSummary() {
-
     const cart = getCart();
-
-
     let subtotal = 0;
-
-
     cart.forEach(cartItem => {
-
         const product =
             products.find(
                 item => item.id === cartItem.id
             );
-
 
         if (product) {
 
@@ -593,12 +531,6 @@ function updateSummary() {
         }
 
     });
-
-
-    /*
-        Change this value if you
-        want another tax percentage.
-    */
 
     const TAX_RATE = 0.0824;
 
@@ -651,11 +583,6 @@ function updateSummary() {
 
 }
 
-
-/* =================================
-   ITEM COUNT TEXT
-================================= */
-
 function updateItemCount() {
 
     const cart = getCart();
@@ -686,11 +613,6 @@ function updateItemCount() {
     }
 
 }
-
-
-/* =================================
-   RECOMMENDATIONS
-================================= */
 
 function renderRecommendations() {
 
@@ -728,7 +650,7 @@ function renderRecommendations() {
             );
 
             image.src =
-                `../../${product.image}`;
+                `${product.image}`;
 
             image.alt =
                 product.name;
