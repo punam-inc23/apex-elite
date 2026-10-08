@@ -22,7 +22,7 @@ products.forEach((product) => {
     });
 
     const imgCard = document.createElement("img");
-    imgCard.src = product.image;
+    imgCard.src = `../../${product.image}`;
 
     const cardData = document.createElement("div");
     cardData.classList.add("product-data");
@@ -43,7 +43,7 @@ products.forEach((product) => {
 
 
     const rateImg = document.createElement("img");
-    rateImg.src = "/apex-elite/assets/icons/rate.png"
+    rateImg.src = "../../assets/icons/rate.png"
 
     const rating = document.createElement("p");
     rating.textContent = product.ratings;

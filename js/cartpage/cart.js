@@ -146,7 +146,7 @@ function createCartItem(
     );
 
     image.src =
-        `${product.image}`;
+        `../../${product.image}`;
 
     image.alt =
         product.name;
@@ -353,7 +353,7 @@ function createCartItem(
     removeButtonDiv.classList.add("remove-button")
 
     const removeImg = document.createElement("img");
-    removeImg.src = "/apex-elite/assets/icons/delete.png"
+    removeImg.src = "../../assets/icons/delete.png"
 
     const removeName = document.createElement("p")
     removeName.textContent = "Remove"
@@ -650,7 +650,7 @@ function renderRecommendations() {
             );
 
             image.src =
-                `${product.image}`;
+                `../../${product.image}`;
 
             image.alt =
                 product.name;

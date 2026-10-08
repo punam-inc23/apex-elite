@@ -67,6 +67,13 @@ async function loadPage() {
         null,
         "./css/homepage/performance.css"
     )
+
+    await loadComponent(
+        "performance",
+        "./pages/homepage/footer.html",
+        null,
+        "./css/homepage/footer.css"
+    )
 }
 
 

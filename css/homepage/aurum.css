@@ -1,10 +1,3 @@
-:root {
-    --primary-color: #D4AF37;
-    --secondary-color: #D62828;
-    --sub-options: #929292;
-    --card-background: rgb(31, 30, 30);
-}
-
 .aurum-section {
     position: relative;
     width: 100%;
@@ -31,13 +24,11 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.9) 0%,
-        rgba(0, 0, 0, 0.75) 35%,
-        rgba(0, 0, 0, 0.25) 60%,
-        rgba(0, 0, 0, 0) 100%
-    );
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0.9) 0%,
+            rgba(0, 0, 0, 0.75) 35%,
+            rgba(0, 0, 0, 0.25) 60%,
+            rgba(0, 0, 0, 0) 100%);
     pointer-events: none;
 }
 
@@ -90,4 +81,49 @@
     font-weight: 700;
 
     letter-spacing: 0.08rem;
+}
+
+/* Responsive added */
+@media (max-width: 900px) {
+    .aurum-section {
+        height: 25rem;
+    }
+
+    .aurum-content {
+        width: min(85%, 24rem);
+        left: 1.5rem;
+    }
+
+    .aurum-title {
+        font-size: 2.5rem;
+    }
+
+    .aurum-description {
+        width: auto;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .aurum-section {
+        height: 20rem;
+    }
+
+    .aurum-title {
+        font-size: 2rem;
+    }
+
+    .aurum-label {
+        font-size: 0.75rem;
+        letter-spacing: 0.12rem;
+    }
+
+    .aurum-content {
+        left: 1rem;
+        width: 85%;
+    }
+
+    .aurum-description {
+        font-size: 0.82rem;
+    }
 }

@@ -1,0 +1,1 @@
+import "../cartpage/cart.js";

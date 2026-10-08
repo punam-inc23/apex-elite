@@ -148,3 +148,37 @@
 
     border: 1px solid #686868;
 }
+
+/* Responsive added */
+@media (max-width: 1300px) {
+    .button-div {
+            flex-wrap: wrap;
+        }
+}
+@media (max-width: 900px) {
+    .hero-section {
+            height: 27rem;
+        }
+    .top-data h1 {
+            font-size: 2.8rem;
+        }
+    .top-data p {
+            font-size: 1.05rem;
+            width: 90%;
+        }
+}
+@media (max-width: 640px) {
+    .hero-section {
+            height: 22rem;
+        }
+    .top-data h1 {
+            font-size: 2.2rem;
+        }
+    .button-div {
+            flex-direction: column;
+            width: 100%;
+        }
+    .button-div button {
+            width: min(90%, 20rem);
+        }
+}

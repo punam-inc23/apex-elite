@@ -49,7 +49,7 @@ function displayProduct(product) {
     const name = document.querySelector("#product-name");
     const price = document.querySelector("#product-price");
     const description = document.querySelector("#product-description");
-    image.src = `${product.image}`;
+    image.src = `../../${product.image}`;
     image.alt = product.name;
     name.textContent = product.name;
     price.textContent = `$${product.price}.00`;

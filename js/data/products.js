@@ -5,7 +5,7 @@ const products = [
         ratings: 4.9,
         reviews: 128,
         price: 220,
-        image: "/apex-elite/assets/items/featured-1.png",
+        image: "assets/items/featured-1.png",
         description: "Engineered for the most demanding landscapes.The Terrain V2 features an ultra- responsive Nitro -Core midsole and an aggressive Apex - Grip outsole for unparalleled traction on any surface.",
         sizes: [6, 7, 8, 9, 10],
         colors: ["black", "red", "yellow"]
@@ -16,7 +16,7 @@ const products = [
         ratings: 4.8,
         reviews: 95,
         price: 180,
-        image: "/apex-elite/assets/items/featured-2.png",
+        image: "assets/items/featured-2.png",
         description: "Engineered for the most demanding landscapes.The Terrain V2 features an ultra- responsive Nitro -Core midsole and an aggressive Apex - Grip outsole for unparalleled traction on any surface.",
         sizes: [8, 9, 10],
         colors: ["white", "red"]
@@ -27,7 +27,7 @@ const products = [
         ratings: 5.0,
         reviews: 210,
         price: 250,
-        image: "/apex-elite/assets/items/featured-3.png",
+        image: "assets/items/featured-3.png",
         description: "Engineered for the most demanding landscapes.The Terrain V2 features an ultra- responsive Nitro -Core midsole and an aggressive Apex - Grip outsole for unparalleled traction on any surface.",
         sizes: [7, 8, 9, 10],
         colors: ["black", "grey"]
@@ -38,7 +38,7 @@ const products = [
         ratings: 4.9,
         reviews: 128,
         price: 340,
-        image: "/apex-elite/assets/items/shop-1.png",
+        image: "assets/items/shop-1.png",
         description: "Engineered for the most demanding landscapes.The Terrain V2 features an ultra- responsive Nitro -Core midsole and an aggressive Apex - Grip outsole for unparalleled traction on any surface.",
         sizes: [6, 7, 8, 9, 10,11],
         colors: ["black", "red", "yellow"]
@@ -49,7 +49,7 @@ const products = [
         ratings: 4.8,
         reviews: 120,
         price: 285,
-        image: "/apex-elite/assets/items/shop-2.png",
+        image: "assets/items/shop-2.png",
         description: "Engineered for the most demanding landscapes.The Terrain V2 features an ultra- responsive Nitro -Core midsole and an aggressive Apex - Grip outsole for unparalleled traction on any surface.",
         sizes: [ 9, 10, 11],
         colors: ["black", "grey"]
@@ -60,7 +60,7 @@ const products = [
         ratings: 4.9,
         reviews: 128,
         price: 210,
-        image: "/apex-elite/assets/items/like-1.png",
+        image: "assets/items/like-1.png",
         description: "Engineered for the most demanding landscapes.The Terrain V2 features an ultra- responsive Nitro -Core midsole and an aggressive Apex - Grip outsole for unparalleled traction on any surface.",
         sizes: [8, 9, 10],
         colors: ["white", "red"]
@@ -71,7 +71,7 @@ const products = [
         ratings: 4.9,
         reviews: 128,
         price: 195,
-        image: "/apex-elite/assets/items/like-2.png",
+        image: "assets/items/like-2.png",
         description: "Engineered for the most demanding landscapes.The Terrain V2 features an ultra- responsive Nitro -Core midsole and an aggressive Apex - Grip outsole for unparalleled traction on any surface.",
         sizes: [ 7, 8, 9, 10,11],
         colors: ["black", "red", "yellow"]
@@ -82,7 +82,7 @@ const products = [
         ratings: 4.9,
         reviews: 128,
         price: 240,
-        image: "/apex-elite/assets/items/like-3.png",
+        image: "assets/items/like-3.png",
         description: "Engineered for the most demanding landscapes.The Terrain V2 features an ultra- responsive Nitro -Core midsole and an aggressive Apex - Grip outsole for unparalleled traction on any surface.",
         sizes: [6, 7, 8, 9, 10, 11],
         colors: ["black", "grey"]
@@ -93,7 +93,7 @@ const products = [
         ratings: 4.9,
         reviews: 128,
         price: 225,
-        image: "/apex-elite/assets/items/like-4.png",
+        image: "assets/items/like-4.png",
         description: "Engineered for the most demanding landscapes.The Terrain V2 features an ultra- responsive Nitro -Core midsole and an aggressive Apex - Grip outsole for unparalleled traction on any surface.",
         sizes: [ 8, 9, 10, 11],
         colors: ["white", "red"]
